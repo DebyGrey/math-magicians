@@ -1,6 +1,8 @@
+import ResultDisplayScreen from './ResultDisplayScreen';
+
 const Calculator = () => (
   <div className="calculator">
-    <input type="text" className="display-result" id="result" value="0" readOnly />
+    <ResultDisplayScreen />
     <div className="functional-buttons">
       <button type="button" id="ac">AC</button>
       <button type="button" id="+/-">+/-</button>
