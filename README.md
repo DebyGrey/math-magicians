@@ -29,9 +29,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 PORTFOLIO WEBSITE <a name="about-project"></a>
+# 📖 MATH MAGICIANS WEBSITE <a name="about-project"></a>
 
-**Math magicians website** is a website which that allows users to add/remove books from a list.
+**Math magicians website** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, read a random math-related quote.
 
 ## 🛠 Built With <a name="built-with"></a>
 
