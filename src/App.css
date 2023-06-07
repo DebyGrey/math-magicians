@@ -28,7 +28,7 @@
   background-color: #858694;
   width: 100%;
   border: none;
-  padding: 5% 4%;
+  padding: 4% 4%;
   font-size: 24px;
   height: 74px;
   color: #fff;
@@ -37,7 +37,7 @@
 
 .result-display-screen .previous-operand {
   font-size: 20px;
-  color: #666;
+  color: #ccc;
 }
 
 .result-display-screen .current-operand {
