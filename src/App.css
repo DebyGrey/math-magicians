@@ -7,11 +7,20 @@
   box-sizing: border-box;
 }
 
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10%;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
 .calculator {
-  position: absolute;
+  /* position: absolute;
   left: 25%;
   top: 10%;
-  width: 50%;
+  width: 50%; */
   background-color: #c6c6c6;
 }
 
@@ -74,4 +83,12 @@ button:active {
 
 .orange-btn:active {
   background-color: #a14d04;
+}
+
+/* Quotes */
+.quotes {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
