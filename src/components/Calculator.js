@@ -1,40 +1,109 @@
+import { useState } from 'react';
 import ResultDisplayScreen from './ResultDisplayScreen';
+import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <div className="calculator">
-    <ResultDisplayScreen />
-    <div className="functional-buttons">
-      <button type="button" id="ac">AC</button>
-      <button type="button" id="+/-">+/-</button>
-      <button type="button" id="%">%</button>
-      <button type="button" className="orange-btn" id="/">
-        /
-      </button>
-      <button type="button" id="7">7</button>
-      <button type="button" id="8">8</button>
-      <button type="button" id="9">9</button>
-      <button type="button" className="orange-btn" id="*">
-        *
-      </button>
+const Calculator = () => {
+  const [buttonItem, setbuttonItem] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-      <button type="button" id="4">4</button>
-      <button type="button" id="5">5</button>
-      <button type="button" id="6">6</button>
-      <button type="button" className="orange-btn" id="-">
-        -
-      </button>
-      <button type="button" id="1">1</button>
-      <button type="button" id="2">2</button>
-      <button type="button" id="3">3</button>
-      <button type="button" className="orange-btn">
-        +
-      </button>
-      <button type="button" className="grid-item" id="0">0</button>
-      <button type="button" id=".">.</button>
-      <button type="button" className="orange-btn" id="=">
-        =
-      </button>
+  const clickButtonHandler = (event) => {
+    const buttonName = event.target.innerText;
+    setbuttonItem(calculate(buttonItem, buttonName));
+  };
+
+  const { total, next, operation } = buttonItem;
+
+  return (
+    <div className="calculator">
+      <ResultDisplayScreen total={total} next={next} operation={operation} />
+      <div className="functional-buttons">
+        <button type="button" onClick={clickButtonHandler}>
+          AC
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          +/-
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          %
+        </button>
+        <button
+          type="button"
+          className="orange-btn"
+          onClick={clickButtonHandler}
+        >
+          ÷
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          7
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          8
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          9
+        </button>
+        <button
+          type="button"
+          className="orange-btn"
+          onClick={clickButtonHandler}
+        >
+          x
+        </button>
+
+        <button type="button" onClick={clickButtonHandler}>
+          4
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          5
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          6
+        </button>
+        <button
+          type="button"
+          className="orange-btn"
+          onClick={clickButtonHandler}
+        >
+          -
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          1
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          2
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          3
+        </button>
+        <button
+          type="button"
+          className="orange-btn"
+          onClick={clickButtonHandler}
+        >
+          +
+        </button>
+        <button
+          type="button"
+          className="grid-item"
+          onClick={clickButtonHandler}
+        >
+          0
+        </button>
+        <button type="button" onClick={clickButtonHandler}>
+          .
+        </button>
+        <button
+          type="button"
+          className="orange-btn"
+          onClick={clickButtonHandler}
+        >
+          =
+        </button>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 export default Calculator;
