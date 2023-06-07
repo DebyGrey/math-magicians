@@ -15,15 +15,25 @@
   background-color: #c6c6c6;
 }
 
-.display-result {
+.result-display-screen {
   background-color: #858694;
   width: 100%;
   border: none;
-  padding: 0 2%;
+  padding: 5% 4%;
   font-size: 24px;
-  height: 65px;
+  height: 74px;
   color: #fff;
   text-align: right;
+}
+
+.result-display-screen .previous-operand {
+  font-size: 20px;
+  color: #666;
+}
+
+.result-display-screen .current-operand {
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .functional-buttons {
