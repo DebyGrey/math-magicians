@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DebyGrey/math-magicians/static/css/main.4b40e125.css",
+    "main.js": "/DebyGrey/math-magicians/static/js/main.75f84251.js",
+    "index.html": "/DebyGrey/math-magicians/index.html",
+    "main.4b40e125.css.map": "/DebyGrey/math-magicians/static/css/main.4b40e125.css.map",
+    "main.75f84251.js.map": "/DebyGrey/math-magicians/static/js/main.75f84251.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b40e125.css",
+    "static/js/main.75f84251.js"
+  ]
+}
