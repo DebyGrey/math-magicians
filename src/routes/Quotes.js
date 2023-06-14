@@ -33,9 +33,9 @@ const Quotes = () => {
   }, []);
 
   if (error) {
-    return <p>Something went wrong!</p>;
+    return <p className="status">Something went wrong!</p>;
   }
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className="status">Loading...</p>;
 
   return (
     <div className="quotes">
