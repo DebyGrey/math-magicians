@@ -7,20 +7,14 @@
   box-sizing: border-box;
 }
 
-.App {
+.calculator-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10%;
-  gap: 100px;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 20px;
+  padding: 10% 10%;
 }
 
 .calculator {
-  /* position: absolute;
-  left: 25%;
-  top: 10%;
-  width: 50%; */
   background-color: #c6c6c6;
 }
 
@@ -87,8 +81,80 @@ button:active {
 
 /* Quotes */
 .quotes {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  width: 50%;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 2rem;
   padding: 0 1rem;
+}
+
+/* Home page */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 5%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 3% 5%;
+}
+
+header h1 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.home-page h1 {
+  display: flex;
+  justify-content: flex-start;
+  line-height: 1.5rem;
+  color: #000;
+  width: 80%;
+}
+
+.home-page p {
+  line-height: 2rem;
+  text-align: left;
+  width: 80%;
+  font-size: 20px;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  padding: 10px 10px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+/* loading */
+.status {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 50%;
+  font-size: 20px;
 }
