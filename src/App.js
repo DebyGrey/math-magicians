@@ -16,14 +16,6 @@ function App() {
   return (
     <>
       <Router>
-        {/* <Layout />
-        <Routes>
-          <Route path="/math-magicians" element={<Navigate to="/" />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/calculator" element={<Calculator />} />
-          <Route path="/quotes" element={<Quotes />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes> */}
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
