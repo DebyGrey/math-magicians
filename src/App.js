@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  Routes,
-  Route,
-  BrowserRouter as Router,
-} from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import Home from './routes/Home';
 import Calculator from './routes/Calculator';
 import Quotes from './routes/Quotes';
