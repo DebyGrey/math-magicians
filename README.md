@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -39,7 +40,7 @@
 
 
 <details>
-  <summary>React.js & Redux</summary>
+  <summary>React.js, Jest & React Test Library</summary>
 </details>
 
 <!-- Features -->
@@ -52,6 +53,11 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- Link to live project: [Math magicians - A website for mathematics fans](https://math-magicians-2trr.onrender.com/)
 
 
 <!-- GETTING STARTED -->
@@ -88,7 +94,7 @@ To install this project run the following command in your terminal:
 ### Usage
 
 To run the project, run the following command in your terminal: 
-+ npm start
++ npm run start
 
 
 ### Run tests
