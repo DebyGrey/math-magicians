@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Routes,
   Route,
-  Navigate,
   BrowserRouter as Router,
 } from 'react-router-dom';
 import Home from './routes/Home';
@@ -17,13 +16,21 @@ function App() {
   return (
     <>
       <Router>
-        <Layout />
+        {/* <Layout />
         <Routes>
           <Route path="/math-magicians" element={<Navigate to="/" />} />
           <Route path="/" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/quotes" element={<Quotes />} />
           <Route path="*" element={<PageNotFound />} />
+        </Routes> */}
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/calculator" element={<Calculator />} />
+            <Route path="/quotes" element={<Quotes />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Route>
         </Routes>
       </Router>
     </>
